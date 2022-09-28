@@ -6,6 +6,7 @@ import CrieSuaConta from './pages/CrieSuaConta';
 import CadastrarContatos from './pages/CadastrarContatos';
 import EditarContatos from './pages/EditarContatos';
 import ConsultarContatos from './pages/ConsultarContatos';
+import ConsultaCep from './pages/ConsultaCep'
 
 export default function Main() {
 
@@ -31,6 +32,10 @@ export default function Main() {
               <Route
                 path="/consultar-contatos"
                 element={<ConsultarContatos />}
+            />
+               <Route
+                path="/consulta-cep"
+                element={<ConsultaCep />}
             />
         </Routes>
     )

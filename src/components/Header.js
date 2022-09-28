@@ -53,6 +53,17 @@ export default function Header() {
                                 )
                             }
                         </li>
+
+                        <li className="nav-item">
+                            {
+                                !autenticado && (
+                                    <NavLink className="nav-link" to="/consulta-cep">
+                                        Consulta CEP
+                                    </NavLink>
+                                )
+                            }
+                        </li>
+
                         {
                             autenticado &&(
                                 <li className="nav-item dropdown">
